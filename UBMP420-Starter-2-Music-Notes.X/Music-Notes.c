@@ -50,7 +50,7 @@ void play_sound(unsigned int period, unsigned int cycles)
 // integer values (limiting frequencies to between approximately 440Hz and
 // 10000 Hz, and durations to between approximately 20 ms and 6000 ms) to speed
 // up calculations. Results are approximate, but generally good enough. 
-// Usage: play_freq(523, 500);      // Play C5 for 500 ms
+// Usage: play_freq(523, 500);      // Play 523 Hz (note C5) for 500 ms
 void play_freq(unsigned int frequency, unsigned int duration)
 {
     unsigned int period = 57600 / (frequency / 8) - 2;
